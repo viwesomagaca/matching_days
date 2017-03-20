@@ -14,8 +14,10 @@ function getDays() {
     'use strict';
     
     for (var i = 0; i < weekdays.length; i++) {
+		if(d1.value !==""){
 		var newDate1 = new Date(d1.value);
 		day1 = newDate1.getDay();
+	    }
 		
 		if(d2.value !== ""){
 			var newDate2 = new Date(d2.value);
