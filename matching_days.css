@@ -1,23 +1,48 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./Open_Sans/OpenSans-SemiBold.ttf');
+    font-weight: normal;
+  
+  }
+
 body{
-    align-content: center;
-    background-image: url(77VSDWY.jpg);
+    font-family: 'OpenSans';
+    display: flex;
+    justify-content: center;
+    background-image: url(./00585a3568a0a7d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-h1{
-    color: floralwhite;
+
+.container{
     align-content: center;
-    font-size: 700%;
+    position: relative;
+    top:20%;
+    width: 95%;
+    height:300px;
+    background-color: white;
+    padding: 24px;
+}
+
+h1{
+    align-content: center;
+    font-size: 30px;
+    margin: 24px 0;
+}
+
+p{
+    font-size: 20px;
 }
 tables, th{
-    color: floralwhite;
-    border: 5px solid white;
-    width: 100px;
-    height: 50px;
+    padding: 10px;
+    border: 5px solid black;
     text-align: center;
     font-size: 24px;
 }
 #days{
+    font-size: 18px;
+    margin: 24px 0 !important;
     align-content: center;
-    color: floralwhite;
 }
 
 .matching{
@@ -29,4 +54,17 @@ tables, th{
 }
 .dateTwo{
     background-color: red;
+}
+
+
+@media only screen and (min-width:768px) {
+ .container{
+     height:300px !important;
+ }
+}
+
+@media only screen and (min-width:1024px) {
+    .container{
+        height: 600px;
+    }
 }
